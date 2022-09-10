@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+:root {
+  --color: #222831;
+  --gray: #393e46;
+  --yellow: #ffd369;
+  --white: #eeeeee;
+  --primary-fond: "Rubik", sans-serif;
+  --secondary-fond: "Roboto", sans-serif;
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--color);
+  font-family: var(--primary-fond);
+  font-size: 15px;
+  color: var(--white);
+}
+
+.header {
+  padding: 2rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .logo {
+  color: var(--yellow);
+  text-decoration: none;
+  font-family: var(--font-secondary);
+  font-size: 2rem;
+}
+
+.header .logo .first-name {
+  color: var(--yellow);
+  transition: color 600ms;
+}
+.header .logo .secondary-name {
+  color: var(--white);
+  transition: color 600ms;
+  font-family: var(--secondary-fond);
+}
+.header .logo .last-name {
+  transition: color 600ms;
+}
+
+.header .logo:hover .first-name {
+  color: var(--yellow);
+}
+
+.header .logo:hover .last-name {
+  color: var(--white);
+}
+
+.header .menu .menu-list {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  font-weight: bold;
+}
+
+.header .menu .menu-list .menu-list-item i {
+  color: var(--yellow);
+  margin-right: 0.25rem;
+}
+
+.header .menu .menu-list .menu-list-item .link {
+  background-color: var(--gray);
+  color: var(--white);
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 1px 3px;
+  border-radius: 32px;
+  transition: transform 0.4s;
+  font-size: 15px;
+}
+
+.btn {
+  background-color: var(--yellow);
+  color: var(--color);
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 10px 50px;
+  border-radius: 30px;
+  transition: transform 0.4s;
+}
+.btn:hover {
+  transform: scale(0.9);
+}
+@media screen and (max-width: 800px) {
+  .header .logo {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .header .menu .menu-list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+.about {
+  width: 100%;
+  padding: 0px 0px;
+  background-color: var(--color);
+}
+.about img {
+  height: auto;
+  width: 560px;
+}
+.about-text {
+  width: 550px;
+}
+.main {
+  width: 1130px;
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.about-text h2 {
+  color: var(--white);
+  font-size: 75px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+.about-text h5 {
+  color: var(--yellow);
+  letter-spacing: 2px;
+  font-size: 22px;
+  margin-bottom: 25px;
+  text-transform: capitalize;
+}
+.about-text p {
+  color: var(--white);
+  letter-spacing: 1px;
+  line-height: 28px;
+  font-size: 16px;
+  margin-bottom: 45px;
+}
+button {
+  background-color: var(--white);
+  color: var(--color);
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 12px 30px;
+  border-radius: 30px;
+  transition: 0.4s;
+  font-family: var(--primary-fond);
+}
+button:hover {
+  background-color: var(--yellow);
+  border: 2px solid var(--color);
+  cursor: pointer;
+}
